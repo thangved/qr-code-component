@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <style>
+      :root {
+        --color-slate-900: #1f314f;
+        --color-slate-500: #68778d;
+        --color-slate-300: #d5e1ef;
+        --color-white: #fff;
+
+        --text-size-1: 22px;
+        --text-color-1: var(--color-slate-900);
+        --text-height-1: 1.2;
+        --text-space-1: 0px;
+
+        --text-size-2: 15px;
+        --text-color-2: var(--color-slate-900);
+        --text-height-2: 1.4;
+        --text-space-2: 0px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+      }
+
+      body {
+        width: 100%;
+        min-height: 100vh;
+        background: #d5e1ef;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text-1 {
+        font-size: var(--text-size-1);
+        color: var(--text-color-1);
+        line-height: var(--text-height-1);
+        letter-spacing: var(--text-space-1);
+        text-align: center;
+      }
+
+      .text-2 {
+        font-size: var(--text-size-2);
+        color: var(--text-color-2);
+        line-height: var(--text-height-2);
+        letter-spacing: var(--text-space-2);
+        text-align: center;
+      }
+
+      .card {
+        width: 100%;
+        padding: 16px 16px 40px 16px;
+        background: #fff;
+        max-width: 320px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        box-shadow: 0 25px 25px #0001;
+      }
+
+      .card img {
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="./images/image-qr-code.png" width="100%" alt="QR code" />
+
+      <h2 class="text-1">Improve your front-end skills by building projects</h2>
+      <p class="text-2">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
+    </div>
+  </body>
+</html>
